@@ -14,7 +14,7 @@ class Svelte2Dts extends Command {
     ,'$ svelte2dts --dryRun ./src'
   ]
 
-  static flags = {
+  static flags: oFlags.Input<any> = {
     // add --version flag to show CLI version
     version: oFlags.version({ 'char': 'v' })
     ,help: oFlags.help({ 'char': 'h' })
